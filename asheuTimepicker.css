@@ -1,0 +1,72 @@
+.cwi_timepicker_wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    z-index: 999;
+    text-align: center;
+    padding: 15px 10px;
+    border: 1px solid #ddd;
+    box-shadow: 0px 0px 25px 0px rgb(0 0 0 / 15%);
+    border-radius: 4px;
+}
+
+.cwi_timepicker_wrapper.top::after {
+    content: "";
+    position: absolute;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 15px solid #fff;
+    bottom: -12px;
+    left: 17px;
+}
+
+.cwi_timepicker_wrapper.bottom::before {
+    content: "";
+    position: absolute;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid #fff;
+    left: 17px;
+    top: -10px;
+}
+
+.cwi_timepicker_wrapper .hour-selector, 
+.cwi_timepicker_wrapper .minute-selector, 
+.cwi_timepicker_wrapper .period-selector, 
+.cwi_timepicker_wrapper .timepicker_action {
+    display: inline-block;
+    width: 60px;
+    vertical-align: middle;
+}
+
+.cwi_timepicker_wrapper .hour-selector select.cs_timepicker_hour,
+.cwi_timepicker_wrapper .minute-selector select.cs_timepicker_minute,
+.cwi_timepicker_wrapper .period-selector select.cs_timepicker_period {
+    border: 1px solid #bbb;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: bold;
+    font-family: 'Roboto';
+}
+
+.cwi_timepicker_wrapper .hour-selector select.cs_timepicker_hour:focus-visible,
+.cwi_timepicker_wrapper .minute-selector select.cs_timepicker_minute:focus-visible,
+.cwi_timepicker_wrapper .period-selector select.cs_timepicker_period:focus-visible,
+.cwi_timepicker_wrapper .timepicker_action .cwi_timepicker_set:focus-visible {
+    outline: none;
+}
+
+.cwi_timepicker_wrapper .timepicker_action .cwi_timepicker_set {
+    background-color: #9c64f4;
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: 'Roboto';
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    line-height: 17px;
+    cursor: pointer;
+}
